@@ -34,40 +34,61 @@ We don't want to expose this data to our reporting tools because it is highly no
 <br>
 
 ### Tables
+
 #### verification_sessions
+```
 Each verification has a status of 
 - Approved (the user's identity was successfully verified), 
 - Declined (the user was identified as a fraudster)
 - Resubmission (there was an issue and the user must attempt a new verification.)
+```
 
 #### documents
+```
 Three types of document are supported: 
 - Passport
 - Residence Permit
 - Drivers License
+```
 
 #### countries
+```
 Countries that issue documents are grouped into regions that share some similar characteristics such as language. 
 
 Regions are a slowly changing dimension. The region a country belongs to can change over time. 
+```
 
 #### regions
+```
 This table contains a list of the regions that countries are group into. 
+```
 
 #### employees
+```
 This table contains all the employees in the company, along with their roles.
+```
 
 #### roles
+```
 This table contains a list of roles in the company. There are three roles: 
 - Verification Specialist
 - Region Lead
 - Account Manager
+```
 
 #### clients
+```
 This table keeps track of all clients. It also contains information about the industry those clients operate in.
+```
 
 #### accounts
-It contains information about the clients and their account values. Each client has an account manager who is an employee in the company.
+```
+It contains information about the clients and their account values. 
+
+Each client has an account manager who is an employee in the company.
+````
 
 #### account_managers
+```
 This table contains information about account managers in our CRM. The employees are from the same company.
+```
