@@ -23,11 +23,4 @@ build-db)
     psql -h postgres -d verification -U admin -c "\copy crm.accounts FROM '../data/accounts.csv' DELIMITER ',' CSV"
     psql -h postgres -d verification -U admin -c "\copy prod.clients FROM '../data/clients.csv' DELIMITER ',' CSV"
     psql -h postgres -d verification -U admin -c "\copy prod.verification_sessions FROM '../data/verification_sessions.csv' DELIMITER ',' CSV"
-    psql -h postgres -d verification -U admin -c "\copy prod.documents FROM '../data/documents.csv' DELIMITER ',' CSV"
-  fi
-  ;;
-*)
-  echo "Unknown command: $1"
-  exit 1
-  ;;
-esac
+    psql -h postgres -d verification -U admin -c "\copy prod.documents FROM '../data/documents.csv' DELIMITE
