@@ -25,7 +25,7 @@ Below are the questions this model should be able to answer:
 <br>
 
 ## Database Schema
-![schema](./media/Verification.png)
+![schema](./media/schema.png)
 
 This schema represents raw data in the data warehouse. It contains data from our production database in the prod schema and data from our CRM in the CRM schema. 
 
